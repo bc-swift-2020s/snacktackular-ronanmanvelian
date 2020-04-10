@@ -16,6 +16,7 @@ import GoogleSignIn
 class SpotsListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    
     var spots: Spots!
     var authUI: FUIAuth!
     
@@ -52,7 +53,7 @@ class SpotsListViewController: UIViewController {
             self.authUI.providers = providers
             let loginViewController = authUI.authViewController()
             loginViewController.modalPresentationStyle = .fullScreen
-            present(authUI.authViewController(), animated: true, completion: nil)
+            present(loginViewController, animated: true, completion: nil)
         } else {
             tableView.isHidden = false
         }
@@ -137,6 +138,7 @@ extension SpotsListViewController: FUIAuthDelegate {
         if let user = user {
             tableView.isHidden = false
             print("*** We signed in with the user \(user.email ?? "unknown e-mail")")
+            
         }
     }
     
