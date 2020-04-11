@@ -9,8 +9,9 @@
 import Foundation
 import CoreLocation
 import Firebase
+import MapKit
 
-class Spot {
+class Spot: NSObject, MKAnnotation {
     var name: String
     var address: String
     var coordinate: CLLocationCoordinate2D
@@ -26,6 +27,14 @@ class Spot {
     
     var latitude: CLLocationDegrees {
         return coordinate.latitude
+    }
+    
+    var title: String? {
+        return name
+    }
+    
+    var subtitle: String? {
+        return address
     }
     
     var dictionary: [String: Any] {
@@ -45,7 +54,7 @@ class Spot {
     // We are creating a convenience initializer for the "Spot" class
     // Note: any convenience initializer should call the default initializer;
     // we do this by saying self.init (see the init method above)
-    convenience init() {
+    convenience override init() {
         self.init(name: "", address: "", coordinate: CLLocationCoordinate2D(), averageRating: 0.0, numberOfReviews: 0, postingUserID: "", documentID: "")
     }
     
