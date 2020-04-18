@@ -16,6 +16,7 @@ import GoogleSignIn
 class SpotsListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var sortSegmentedControl: UISegmentedControl!
     
     var spots: Spots!
     var authUI: FUIAuth!
@@ -36,6 +37,7 @@ class SpotsListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         spots.loadData {
+            self.sortBasedOnSegmentPressed()
             self.tableView.reloadData()
         }
     }
@@ -80,7 +82,23 @@ class SpotsListViewController: UIViewController {
     // selected cell before the user presses the "add" button (which executes
     // the present modally (with identifier "AddDetail", not "ShowDetail",
     // therefore resulting in the execution of the else statement) segue
-
+    
+    func sortBasedOnSegmentPressed() {
+        switch sortSegmentedControl.selectedSegmentIndex {
+        case 0: // A-Z
+            spots.spotArray.sort(by: {$0.name < $1.name})
+        case 1: // Closest
+            print("TODO")
+        case 2: // Avg. Rating
+            print("TODO")
+        default:
+            print("*** ERROR: Hey, you shouldn't have gotten here, our segmented control should just have 3 segments")
+        }
+    }
+    
+    @IBAction func sortSegmentPressed(_ sender: UISegmentedControl) {
+        sortBasedOnSegmentPressed()
+    }
     
     @IBAction func signOutPressed(_ sender: UIBarButtonItem) {
         do {
