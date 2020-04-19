@@ -17,6 +17,7 @@
 		3E8390E5206597F600512DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8390E3206597F600512DEA /* Main.storyboard */; };
 		3E8390E7206597F600512DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8390E6206597F600512DEA /* Assets.xcassets */; };
 		3E8390EA206597F600512DEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8390E8206597F600512DEA /* LaunchScreen.storyboard */; };
+		E3299D38244BAA6E00B92997 /* Double+roundTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3299D37244BAA6E00B92997 /* Double+roundTo.swift */; };
 		E39B9BB5243EA15800DBF770 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E39B9BB4243EA15800DBF770 /* GoogleService-Info.plist */; };
 		E39D5D06243E76AD00B628B4 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D5D05243E76AD00B628B4 /* Spot.swift */; };
 		E39D5D08243E781900B628B4 /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D5D07243E781900B628B4 /* Spots.swift */; };
@@ -37,6 +38,7 @@
 		3E8390EB206597F600512DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		862BAB3BC9F949FF3CDD1BC9 /* Pods_Snacktacular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snacktacular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6E70AE2FE51B25191C4A5F /* Pods-Snacktacular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.debug.xcconfig"; path = "Target Support Files/Pods-Snacktacular/Pods-Snacktacular.debug.xcconfig"; sourceTree = "<group>"; };
+		E3299D37244BAA6E00B92997 /* Double+roundTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+roundTo.swift"; sourceTree = "<group>"; };
 		E39B9BB4243EA15800DBF770 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E39D5D05243E76AD00B628B4 /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
 		E39D5D07243E781900B628B4 /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				3E0F960B2065A17500AE450D /* SpotDetailViewController.swift */,
 				3E0F960D2065AB6400AE450D /* SpotReviewsTableViewCell.swift */,
 				3E0F960F2065AC1A00AE450D /* SpotPhotosCollectionViewCell.swift */,
+				E3299D37244BAA6E00B92997 /* Double+roundTo.swift */,
 				3E8390E3206597F600512DEA /* Main.storyboard */,
 				3E8390E6206597F600512DEA /* Assets.xcassets */,
 				3E8390E8206597F600512DEA /* LaunchScreen.storyboard */,
@@ -296,6 +299,7 @@
 				E39D5D06243E76AD00B628B4 /* Spot.swift in Sources */,
 				3E8390E0206597F600512DEA /* AppDelegate.swift in Sources */,
 				E39D5D08243E781900B628B4 /* Spots.swift in Sources */,
+				E3299D38244BAA6E00B92997 /* Double+roundTo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
